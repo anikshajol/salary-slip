@@ -23,6 +23,10 @@
         .font-size {
             font-size: 21px;
         }
+
+        td{
+            font-weight: 600;
+        }
     </style>
 </head>
 
@@ -33,9 +37,7 @@
             <img src="./Logo (1).png" class="w-[15rem]" alt="">
 
         </div>
-        <div>
-            <p class="slogan text-center absolute bottom-0">The ultimate Solution of Travelling</p>
-        </div>
+      
         <div>
 
             <address>
@@ -47,33 +49,45 @@
         </div>
     </header>
 
-    <main>
+    <main class="mb-14">
 
         <section class=" info flex justify-around">
             <div class="my-20">
-                <p id="Month" class="text-xl font-bold ">Month: <span class="font-semibold">4/6/2023</span></p>
-                <p id="employee-name" class="text-xl font-bold "> Employee Name: <span class="font-semibold">Md Anik
-                        Hasan</span></p>
+               <div class="flex items-center gap-32">
+                <p id="Month" class="text-xl font-bold ">Month:</p>
+                
+                <p class="font-semibold ">3/8/2023</p>
+               </div>
 
-                <p id="employee-id" class="text-xl font-bold ">Employee ID: <span class="font-semibold">2018-017</span>
-                </p>
-                <p id="designation" class="text-xl font-bold "> Designation: <span class="font-semibold">Manager,
-                        Reservation & Ticketing</span></p>
 
+              <div class="flex items-center gap-9">
+                <p id="employee-name" class="text-xl font-bold "> Employee Name:</p>
+                <p class="font-semibold">Md Anik Hasan</p>
+              </div>
+              <div class="flex items-center gap-[4.5rem]">
+                <p id="employee-id" class="text-xl font-bold ">Employee ID: </p> 
+                <p class="font-semibold">2018-017</p>
+               </div>
+
+               <div class="flex items-center gap-[4.6rem]">
+                <p id="designation" class="text-xl font-bold "> Designation: </p>
+                <p class="font-semibold">Manager, Reservation & Ticketing</p>
+            </div>
             </div>
 
 
-            <div>
-                <span></span>
-            </div>
 
         </section>
 
-
+        <div>
+            
+        </div>
         <!-- salary details -->
         <section class="flex justify-center items-end ">
+   
             <div class="border-r-2 border-black pr-8">
-                <h2 class="text-center text-2xl font-bold">Salary Details</h2>
+                <h2 class="text-center text-3xl font-bold mb-20 border-b-8 pb-2 border-black">Salary Details</h2>
+         
                 <div class="overflow-x-auto mx-auto ">
                     <table class="table ">
                         <!-- head -->
@@ -83,39 +97,39 @@
                             <tr>
                                 <th></th>
                                 <td>Basic Salary</td>
-                                <td id="basic">0</td>
+                                <td id="basic">24000</td>
 
                             </tr>
                             <!-- row 2 -->
                             <tr>
                                 <th>Allowance</th>
                                 <td>House Rent</td>
-                                <td id="house-rent">0</td>
+                                <td id="house-rent">8000</td>
 
                             </tr>
                             <!-- row 3 -->
                             <tr>
                                 <th>Allowance</th>
                                 <td>Mobile Bill</td>
-                                <td id="mobile-bill">0</td>
+                                <td id="mobile-bill">500</td>
 
                             </tr>
                             <!-- row 4 -->
                             <tr class=" border-b-2 border-black">
                                 <th>Allowance</th>
                                 <td>Conveyance</td>
-                                <td id="tada-bill">0</td>
+                                <td id="tada-bill">3000</td>
                             </tr>
 
 
                             <tr>
                                 <th></th>
                                 <td>Total</td>
-                                <td id="total">0</td>
+                                <td id="total">35500</td>
                             </tr>
                         </tbody>
 
-                        <tr class=" border-b-2 border-black">
+                        <tr class=" ">
 
                             <th></th>
                             <td class="text-red-700">Tax Deduction</td>
@@ -126,7 +140,13 @@
 
                             <th></th>
                             <td class="text-red-700">Food Bill</td>
-                            <td id="tada-bill" class="text-red-700">2750</td>
+                            <td id="tada-bill" class="text-red-700">2860</td>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td>Total</td>
+                            <td id="total">32640</td>
                         </tr>
 
                     </table>
@@ -141,7 +161,7 @@
             <div class="flex">
                 <div>
                     <p class="font-size font-bold text-center">Payment Mode</p>
-                    <table class="table  ">
+                    <table class="table ">
                         <!-- head -->
                         <div class="overflow-x-auto ">
                             <tbody>
@@ -149,13 +169,13 @@
                                 <tr>
                                     <th></th>
                                     <td>Cash Pay </td>
-                                    <td id="basic">34000</td>
+                                    <td id="basic">32640</td>
 
                                 </tr>
                                 <tr>
                                     <th></th>
                                     <td>Total</td>
-                                    <td id="total">34000</td>
+                                    <td id="total">32640</td>
                                 </tr>
                     </table>
 
@@ -164,6 +184,12 @@
             </div>
         </section>
     </main>
+
+    <footer class="text-center">
+        <div class="flex justify-center">
+            <p class="slogan text-center absolute bottom-0"><small>The ultimate Solution of Travelling</small></p>
+        </div>
+    </footer>
 
     <!--  -->
     <script src="./script.js"></script>
