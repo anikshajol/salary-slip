@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .slogan {
+            color: rgb(92, 91, 91);
+        }
+
+        address {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        table tr td,
+        th,
+        .font-size {
+            font-size: 21px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="flex justify-around items-center border-b-4 pb-4 border-[#EB5C25]">
+        <div>
+            <img src="./Logo (1).png" class="w-[15rem]" alt="">
+
+        </div>
+        <div>
+            <p class="slogan text-center absolute bottom-0">The ultimate Solution of Travelling</p>
+        </div>
+        <div>
+
+            <address>
+                <p> <span>House:</span> 54/A(2<sup>nd</sup> Floor)</p>
+                <p><span>Road:</span> 132, Gulshan-1</p>
+                <p>Dhaka-1212, Bangladesh</p>
+            </address>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class=" info flex justify-around">
+            <div class="my-20">
+                <p id="Month" class="text-xl font-bold ">Month: <span class="font-semibold">4/6/2023</span></p>
+                <p id="employee-name" class="text-xl font-bold "> Employee Name: <span class="font-semibold">Md Anik
+                        Hasan</span></p>
+
+                <p id="employee-id" class="text-xl font-bold ">Employee ID: <span class="font-semibold">2018-017</span>
+                </p>
+                <p id="designation" class="text-xl font-bold "> Designation: <span class="font-semibold">Manager,
+                        Reservation & Ticketing</span></p>
+
+            </div>
+
+
+            <div>
+                <span></span>
+            </div>
+
+        </section>
+
+
+        <!-- salary details -->
+        <section class="flex justify-center items-end ">
+            <div class="border-r-2 border-black pr-8">
+                <h2 class="text-center text-2xl font-bold">Salary Details</h2>
+                <div class="overflow-x-auto mx-auto ">
+                    <table class="table ">
+                        <!-- head -->
+
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr>
+                                <th></th>
+                                <td>Basic Salary</td>
+                                <td id="basic">0</td>
+
+                            </tr>
+                            <!-- row 2 -->
+                            <tr>
+                                <th>Allowance</th>
+                                <td>House Rent</td>
+                                <td id="house-rent">0</td>
+
+                            </tr>
+                            <!-- row 3 -->
+                            <tr>
+                                <th>Allowance</th>
+                                <td>Mobile Bill</td>
+                                <td id="mobile-bill">0</td>
+
+                            </tr>
+                            <!-- row 4 -->
+                            <tr class=" border-b-2 border-black">
+                                <th>Allowance</th>
+                                <td>Conveyance</td>
+                                <td id="tada-bill">0</td>
+                            </tr>
+
+
+                            <tr>
+                                <th></th>
+                                <td>Total</td>
+                                <td id="total">0</td>
+                            </tr>
+                        </tbody>
+
+                        <tr class=" border-b-2 border-black">
+
+                            <th></th>
+                            <td class="text-red-700">Tax Deduction</td>
+                            <td id="tada-bill" class="text-red-700">0</td>
+                        </tr>
+
+                        <tr class=" border-b-2 border-black">
+
+                            <th></th>
+                            <td class="text-red-700">Food Bill</td>
+                            <td id="tada-bill" class="text-red-700">2750</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="flex">
+                <div>
+                    <p class="font-size font-bold text-center">Payment Mode</p>
+                    <table class="table  ">
+                        <!-- head -->
+                        <div class="overflow-x-auto ">
+                            <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                    <th></th>
+                                    <td>Cash Pay </td>
+                                    <td id="basic">34000</td>
+
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>Total</td>
+                                    <td id="total">34000</td>
+                                </tr>
+                    </table>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!--  -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
